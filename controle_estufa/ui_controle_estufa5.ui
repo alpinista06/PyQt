@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>722</width>
-    <height>458</height>
+    <width>619</width>
+    <height>259</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>390</y>
+      <y>200</y>
       <width>451</width>
       <height>51</height>
      </rect>
@@ -125,7 +125,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>20</y>
+      <y>130</y>
       <width>121</width>
       <height>23</height>
      </rect>
@@ -138,7 +138,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>70</y>
+      <y>170</y>
       <width>121</width>
       <height>23</height>
      </rect>
@@ -147,35 +147,30 @@
      <string>Parar Medições</string>
     </property>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget_4">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>199</y>
-      <width>441</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
-     <item>
-      <widget class="QGraphicsView" name="graphicsView_2"/>
-     </item>
-     <item>
-      <widget class="QGraphicsView" name="graphicsView"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPushButton" name="iniciar_thread">
+   <widget class="QPushButton" name="Estabelecer_conexao">
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>120</y>
-      <width>215</width>
+      <y>20</y>
+      <width>121</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Iniciar thread</string>
+     <string>Estabelecer conexão</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="barra_de_conexao">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
     </property>
    </widget>
   </widget>

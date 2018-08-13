@@ -17,6 +17,10 @@ from ui_controle_estufa5 import Ui_controle_estufa
 import random
 import time
 
+#tentando inserir graficos
+import matplotlib.pyplot as plt
+import numpy as np
+
 class executar_em_segundo_plano(QRunnable):
     '''
     Estrutura de uma thread
@@ -63,27 +67,55 @@ class controlador(QDialog, Ui_controle_estufa):
 
         #configuracao de inicializacao da thread
         self.threadpool = QThreadPool()
-        print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
+        #print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
 
         # configuracao padrao do timer
         self.meu_timer = QTimer()
         #configurando o intervalo entre as contagens do timer em microsec
-        self.meu_timer.setInterval(600)
+        self.meu_timer.setInterval(1000)
         self.meu_timer.timeout.connect(self.contador)
         self.contador_do_timer = 0
+        '''
+        # inserindo uma imagem no label_4
+        pixmap = QPixmap('estufa.jpg')
+        self.label_4.setPixmap(pixmap)
+        '''
+        #configuracao da plotagem com matplotlib
+        #ax = plt.subplots()
 
         #Conexoes dos eventos da Interface
         self.regador.clicked.connect(self.regar)
         self.ventilador.clicked.connect(self.ventilar)
         self.parar_medicoes.clicked.connect(self.parar_medidas)
         self.iniciar_medicoes.clicked.connect(self.iniciar_medidas)
-        self.iniciar_thread.clicked.connect(self.funcao_a_ser_executada_em_segundo_plano)
+        self.Estabelecer_conexao.clicked.connect(self.progresso_conexao)
 
     #Tarefa a ser realizada pelo contador a cada constante de tempo
     def contador(self):
         self.contador_do_timer = self.contador_do_timer + 1
         self.lcd_umidade.display(random.randint(50,85))
         self.lcd_temperatura.display(random.randint(19,40))
+        #ploting
+        '''
+        fig, ax = plt.subplots()
+        ax.clear()
+        plt.title('Grafico do nivel de humidade do solo')
+        ax.set_xlim([0,10])   #faixa do eixo horizontal
+        plt.xlabel('Tempo')
+        ax.set_ylim([0,10]) # faixa do eixo vertical
+        plt.ylabel('Nivel de humidade')
+        ax.plot(random.randint(50,85))
+        fig.savefig('plot.jpg')
+
+        # inserindo uma imagem no label_4
+        pixmap = QPixmap('plot.jpg')
+        self.label_4.setPixmap(pixmap)
+        '''
+    def progresso_conexao(self):
+        self.completed = 0
+        while self.completed < 100:
+            self.completed += 0.0002
+            self.barra_de_conexao.setValue(self.completed)
 
     def iniciar_medidas(self):
         self.meu_timer.start()

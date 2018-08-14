@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>619</width>
-    <height>259</height>
+    <width>412</width>
+    <height>325</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,8 +21,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>200</y>
-      <width>451</width>
+      <y>270</y>
+      <width>391</width>
       <height>51</height>
      </rect>
     </property>
@@ -46,9 +46,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>79</y>
-      <width>441</width>
+      <x>10</x>
+      <y>150</y>
+      <width>391</width>
       <height>111</height>
      </rect>
     </property>
@@ -81,9 +81,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>441</width>
+      <x>10</x>
+      <y>90</y>
+      <width>391</width>
       <height>61</height>
      </rect>
     </property>
@@ -118,60 +118,60 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="iniciar_medicoes">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>130</y>
-      <width>121</width>
-      <height>23</height>
+      <x>10</x>
+      <y>0</y>
+      <width>160</width>
+      <height>80</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Iniciar medições</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Estabelecer_conexao">
+       <property name="text">
+        <string>Estabelecer conexão</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="barra_de_conexao">
+       <property name="value">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="parar_medicoes">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>170</y>
-      <width>121</width>
-      <height>23</height>
+      <x>240</x>
+      <y>0</y>
+      <width>160</width>
+      <height>80</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Parar Medições</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Estabelecer_conexao">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>20</y>
-      <width>121</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Estabelecer conexão</string>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="barra_de_conexao">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>50</y>
-      <width>121</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="iniciar_medicoes">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>Iniciar medições</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="parar_medicoes">
+       <property name="text">
+        <string>Parar Medições</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

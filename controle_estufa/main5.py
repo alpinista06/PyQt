@@ -100,7 +100,7 @@ class controlador(QDialog, Ui_controle_estufa):
         fig, ax = plt.subplots()
         ax.clear()
         plt.title('Grafico do nivel de humidade do solo')
-        ax.set_xlim([0,10])   #faixa do eixo horizontal
+        ax.set_xlim([0,100])   #faixa do eixo horizontal
         plt.xlabel('Tempo')
         ax.set_ylim([0,10]) # faixa do eixo vertical
         plt.ylabel('Nivel de humidade')

@@ -10,6 +10,4 @@ Para rodar qualquer interface é necessário ter instalado o python 3, o PyQt5 e
 
   [python3](https://python.org.br/instalacao-linux/)
 
-  [PyQt5 á com o QT Designer](https://gist.github.com/ujjwal96/1dcd57542bdaf3c9d1b0dd526ccd44ff)
-
-    
+  [PyQt5 já com o QT Designer](https://gist.github.com/ujjwal96/1dcd57542bdaf3c9d1b0dd526ccd44ff)

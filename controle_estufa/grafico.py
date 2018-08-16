@@ -33,8 +33,9 @@ while (i<60):
     plt.pause(1)
     fig.savefig('plotter.png')
     contador = contador + 1
+
     if (contador > eixo_x):
 	   leitura.pop(0)
     i=i+1
-
+    
 #ser.close()

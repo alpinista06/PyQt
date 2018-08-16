@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_controle_estufa(object):
     def setupUi(self, controle_estufa):
         controle_estufa.setObjectName("controle_estufa")
-        controle_estufa.resize(412, 325)
+        controle_estufa.resize(408, 327)
         self.centralwidget = QtWidgets.QWidget(controle_estufa)
         self.centralwidget.setEnabled(True)
         self.centralwidget.setObjectName("centralwidget")
@@ -90,6 +90,11 @@ class Ui_controle_estufa(object):
         self.parar_medicoes = QtWidgets.QPushButton(self.verticalLayoutWidget_2)
         self.parar_medicoes.setObjectName("parar_medicoes")
         self.verticalLayout_2.addWidget(self.parar_medicoes)
+        self.horizontalLayoutWidget.raise_()
+        self.horizontalLayoutWidget_2.raise_()
+        self.horizontalLayoutWidget_3.raise_()
+        self.verticalLayoutWidget.raise_()
+        self.verticalLayoutWidget_2.raise_()
         #controle_estufa.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(controle_estufa)

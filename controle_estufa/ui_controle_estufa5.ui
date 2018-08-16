@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>412</width>
-    <height>325</height>
+    <width>408</width>
+    <height>327</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -173,6 +173,12 @@
      </item>
     </layout>
    </widget>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+   <zorder>horizontalLayoutWidget_3</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>verticalLayoutWidget_2</zorder>
+   <zorder>label_3</zorder>
   </widget>
  </widget>
  <resources/>

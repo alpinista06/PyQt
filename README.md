@@ -1,6 +1,6 @@
 # Interfaces gráficas
 
-Desenvolvimento de interfaces graficas , inicialmente para desktop mas com possibilidade de deploy para outras plataformas, usando o PyQt5.
+Desenvolvimento de interfaces graficas , inicialmente para desktop mas com possibilidade de deploy para outras plataformas, usando linguagem python e o PyQt5.
 
 ## Pré-requisitos
 
